@@ -1,6 +1,6 @@
 # Energy Billing Calculator
 
-![Energy Billing Banner]([https://your-banner-image-link-here.jpg](https://eegsa.com/wp-content/uploads/2020/10/FB_IMG_1604167290212-1-940x445.jpg))
+![Energy Billing Banner]([(https://eegsa.com/wp-content/uploads/2020/10/FB_IMG_1604167290212-1-940x445.jpg)])
 
 This application is designed to efficiently calculate and analyze energy billing based on various consumer usage data and tariff rates. Proudly developed by **Nahomy Castro** and **Xavier López**, dedicated students from Universidad del Valle de Guatemala.
 
