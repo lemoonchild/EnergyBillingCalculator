@@ -157,14 +157,17 @@ def calculate():
     closest_calibre = min(calc.calibre_data.keys(), key=lambda k: abs(calc.calibre_data[k]["Diametro"] - diameter_calibre))
     print(f"Calibre más cercano encontrado: {closest_calibre}")
 
+    diameter_calibre = round(diameter_calibre, 6)
+
     # Antes de mostrar los resultados, limpia las entradas de resultados
-    for i in range(1, 4):
+    for i in range(1, 5):
         all_entries[i].delete(0, tk.END)
 
     # Mostrar los resultados en las entradas correspondientes
     all_entries[1].insert(0, total_energy_cost) # Dinero a pagar
     all_entries[2].insert(0, "Baja Tensión Simple Social (BTSS)")  # Tipo de tarifa 
     all_entries[3].insert(0, closest_calibre)          # Diámetro en términos de calibre
+    all_entries[4].insert(0, diameter_calibre)  # Diámetro
     elements_data.clear()
 
 
@@ -231,7 +234,8 @@ info_rows = [
     ("Largo del cable (Metros):", 10),
     ("Dinero a pagar: Q/día", 11),
     ("Tipo de tarifa:", 12),
-    ("Diámetro (en términos de calibre):", 13)
+    ("Diámetro (en términos de calibre):", 13),
+    ("Diámetro: ", 14)
 ]
 
 for text, r in info_rows:
